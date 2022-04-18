@@ -1,0 +1,235 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <style>
+        body {
+            margin: 0px;
+            background-color: rgb(217, 217, 217);
+        }
+
+        #Grid {
+            display: grid;
+            grid-template-columns: 23% 50% 26%;
+            gap: 10px 5px;
+            margin: 0;
+        }
+
+        #grid-container-top {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        #top-img {
+            width: 100%;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            padding: 16px;
+            margin-top: 100px;
+        }
+
+        .About-img {
+            width: 150px;
+        }
+
+        #grid-container-left {
+            background-color: rgb(242, 242, 242);
+        }
+
+        #grid-container-right {
+            background-color: rgb(242, 242, 242);  
+        }
+        
+        #grid-container-middle {
+            display: grid;
+            grid-gap: 10px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .About-container {
+            margin-bottom: 90px;
+            margin-top: 10%;
+            margin: 15px auto;
+            border: 1px solid rgb(102, 102, 102);
+            padding: 25px;
+            border-width: 5px;
+            border-radius: 40px;
+            border-block-width: 40px;
+            width: 420px;
+            box-shadow: 0 5px 10px black;
+        }
+
+        h3 {
+            margin-left: 50px;
+        }
+
+        li {
+            margin-left: 50px;
+            padding: 16px;
+            font-style: oblique;
+            font-weight: bolder;
+            font-size: x-large;
+            color: rgb(109, 104, 104);
+        }
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            font-weight: bold;
+            color: rgb(82, 81, 81);
+            padding: 16px;
+        }
+        #grid-container-right .bottom-img{
+            width: 92%;
+            border:1px solid salmon;
+            height: 7%;
+            margin:10px 15px;
+              
+        }
+        #grid-container-right h2,p {
+            text-align: center;
+        }
+        @media only screen and (max-width:1109px) {
+
+            /* For mobile phones: */
+            #grid {
+                display:grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto auto auto auto;
+                justify-content: center;
+            }
+
+            #grid-container-top {
+                grid-column: 1/-1;
+            }
+
+            #grid-container-left {
+                grid-column: 1/-1;
+                border:1px solid salmon;
+                width: 98%;
+            }
+
+            #grid-container-middle {
+                display: grid;
+                grid-column: 1/-1;
+                grid-gap:20px;
+                align-items: center;
+                padding-bottom: 20px;
+              
+            }
+            #grid-container-middle .About-container{
+                margin: auto;
+            }
+
+            #grid-container-right {
+                grid-column: 1/-1;
+                display: grid;
+                justify-content: center;
+               
+            }
+            
+            #grid-container-right h2,p {
+
+               text-align: center;
+            }
+            .About-container{
+                grid-template-columns: 98%;
+            }
+            #grid-container-right .bottom-img{
+               width: 96%;
+               border:1px solid salmon;
+               height: 500px;
+               margin:10px 10px;
+            }
+            #grid-container-top #top-img{
+                width: 100%;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="Grid">
+        <div id="grid-container-top">
+            <img id="top-img" src="https://www.aryacollege.in/wp-content/uploads/2019/01/05-CSE.jpg" alt="CSE-pic">
+        </div>
+        <div id="grid-container-left">
+            <h3>About</h3>
+            <ul>
+                <li>Schooling</li>
+                <li>Intermediate</li>
+                <li>Graduation</li>
+                <span><a href="https://www.linkedin.com/in/satyam-gupta-676814203/"><img class="logo-img"
+                            src="https://tse4.mm.bing.net/th?id=OIP.DgVNhFcvWWSCxJpVWsry4wHaHV&pid=Api&P=0&w=160&h=158"
+                            alt="linkedIn"></a></span>
+                <span><a href="https://www.instagram.com/"><img class="logo-img"
+                            src="https://tse1.mm.bing.net/th?id=OIP.mdNMeNAxQL1gWv0U3KAe1gHaHZ&pid=Api&P=0&w=167&h=167"
+                            alt="instagram"></a></span>
+                <span><a href="https://www.facebook.com/yzw036"><img class="logo-img"
+                            src="http://1.bp.blogspot.com/-KL5NxRS7sqY/Tjac52rFmpI/AAAAAAAAALw/WSL46Vc1ArA/s1600/Facebook_icon.jpg"
+                            alt="facebook"></a></span>
+            </ul>
+        </div>
+        <div id="grid-container-middle">
+            <div class="middle-para">
+                <h1>About Me</h2>
+                    <p>Myself Satyam Kumar and I am a Computer Science Student<br>I am enjoying designing the web
+                        pages<br>Wanted to be a FullStack web developer</p>
+            </div>
+            <div class="About-container">
+                <img class="About-img" src="/satyam school photo.jpeg" alt="satyam-10th-pic">
+                <h2>Matriculation(10th)<Br><i>Secure School top rank</i></h2>
+                <p>Board : CBSE<br>
+                    Passing Year : 2018<br>
+                    Percentage : 92.8
+                </p>
+            </div>
+            <div class="About-container">
+                <img class="About-img" src="/sam.jpg" alt="satyam-12th-pic">
+                <h2>Intermediate(12th)<Br><i>Secure College top rank</i></h2>
+                <p>Board : BSEB<br>
+                    Passing Year : 2020<br>
+                    Percentage : 88.4
+                </p>
+            </div>
+            <div class="About-container">
+                <img class="About-img" src="/satyam college pic.jpeg" alt="satyam-college-pic">
+                <h2>Institution :- SLIET<Br></h2>
+                <P>Trade : CSE<br>1st Semester<br>SGPA : 9.15</P>
+            </div>
+
+            <div class="About-container">
+                <img class="About-img" src="/satyam college pic.jpeg" alt="satyam-college-pic">
+                <h2>Institution :- SLIET<Br></h2>
+                <P>Trade : CSE<br>2nd Semester<br>SGPA : 10</P>
+            </div>
+
+            <div class="About-container">
+                <img class="About-img" src="/satyam college pic.jpeg" alt="satyam-college-pic">
+                <h2>Institution :- SLIET<Br></h2>
+                <P>Trade : CSE<br>3rd Semester<br>SGPA : 9.95</P>
+            </div>
+        </div>
+        <div id="grid-container-right">
+            <img class="bottom-img"  src="https://cdn.mos.cms.futurecdn.net/Po8boBSzfQifAxkbgftCLV.jpg"
+                alt="Work-pic">
+            <h2>How I Work</h2>
+            <p>I am very dedicated person towards my work.<br>In my veiw time is the most important thing so I always
+                try to finish my works on time.
+                I don't hegitate asking for help if I stuck anywhere.<br>And the biggest thing always excited to explore
+                new things and exposures.</p>
+        </div>
+    </div>
+</body>
+
+</html>

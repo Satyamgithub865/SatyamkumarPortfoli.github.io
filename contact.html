@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact me</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .logo-img{
+            width:50px;
+            height:50px;
+            padding: 16px;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns:auto auto auto;
+            grid-template-rows:100vh;
+        }
+        #grid-container-left{
+           background-image: url("https://wallpapercave.com/wp/rzfJKNo.jpg");
+           text-align: center;
+           box-shadow:0 5px 10px black;
+        }
+        #grid-container-right{
+            background-color: rgb(153, 255, 255);
+            padding: 16px;
+        }
+        .inside-div{
+            display:inline-block;
+            margin-top: 150px;
+            margin-left: 20px;
+            font-weight: 400;
+            font-size: large;
+        }
+        #temp{
+            margin-left: 300px;
+        }
+        #left-grid-para{
+            margin-top: 80px;
+            color: aliceblue;
+            font-weight: 900;
+            font-size: xx-large;
+            word-spacing: 10px;
+            line-height: 50px;
+        }
+        form{
+            padding: 20px;
+            border:1px solid black;
+            box-shadow:0 5px 10px black;
+            width: 300px;
+            height: 400px;
+        }
+        input{
+            padding: 10px;
+            width:300px;
+            margin-bottom: 10px;
+            border: none;
+            background-color:rgb(153, 255, 255);
+            border-bottom:2px solid black;
+        }
+        button{
+            display: block;
+            margin-top: 10px;
+            margin-left: 90px;
+            width: 120px;
+            background-color: rgb(116, 116, 230);
+            color: aliceblue;
+            
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        textarea{
+            width: 280px;
+            background-color: aqua;
+        }
+
+        @media only screen and (max-width: 650px) {
+       /* For mobile phones: */
+       #grid{
+           grid-template-columns:auto;
+           grid-template-rows:auto auto auto ;
+           
+       }
+       #grid-container-left{
+           justify-content: center;
+           grid-column:1/-1;
+       }
+       #grid-container-right{
+           grid-column:1/-1;
+           justify-content: center;
+       }
+    } 
+       @media only screen and (min-width: 590px) and (max-width: 620px) {
+           #grid-container-left{
+           display: flex;
+           flex-direction: column;
+        }
+    } 
+
+
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div id="grid-container-left">
+            <span><a href="https://www.linkedin.com/in/satyam-gupta-676814203/"><img class="logo-img" src="https://tse4.mm.bing.net/th?id=OIP.DgVNhFcvWWSCxJpVWsry4wHaHV&pid=Api&P=0&w=160&h=158" alt="linkedIn"></a></span>
+            <span><a href="https://www.instagram.com/"><img class="logo-img" src="https://tse1.mm.bing.net/th?id=OIP.mdNMeNAxQL1gWv0U3KAe1gHaHZ&pid=Api&P=0&w=167&h=167" alt="instagram"></a></span>
+            <span><a href="https://www.facebook.com/yzw036"><img class="logo-img" src="http://1.bp.blogspot.com/-KL5NxRS7sqY/Tjac52rFmpI/AAAAAAAAALw/WSL46Vc1ArA/s1600/Facebook_icon.jpg" alt="facebook"></a></span>
+            <p id="left-grid-para" ><B>Hello,<br></B>I am open<br><b> to work</b> <br>and very exited <br>to explore the practical <br><b>company exposures</b></p>
+        </div>
+
+        <div id="grid-container-right">
+                <div class="inside-div">
+                    <h3>CONTACT</h3>
+                    <p>
+                        Email :- satyamaman865@gmail.com<br>
+                        contact number :- 7256917164<br>
+                        Whatsapp number :- 7808722625<br>
+                    </p>
+                    <h4>Location :-</h4>
+                    <p>
+                        <b>Permanent address :-</b><br>
+                        At - Kudhwa Bhatti Chowk<br>
+                        P.S - Chakmehsi<br>
+                        P.O - Barheta<br>
+                        Dist - Samastipur<br>
+                        State - Bihar
+                    </p>
+                </div>
+        </div>
+            
+        <div id="grid-container-right">
+           <div class="inside-div">
+            <form id="contact-form">
+                <h3 id="form-heading">Reach out to me</h3>
+                <input  type="text" placeholder="Your Full Name" name="name"><br>
+                <input  type="email" placeholder="Email" name="email"><br>
+                <input  type="tel" placeholder="Contact No." name="mobile number"><br>
+                <textarea cols="30" rows="10">Write Your Message Here</textarea>
+                <button type="button" onclick="myfun()">Send</button>
+            </form>
+           </div>
+            
+        </div>
+        
+    </div>
+
+    <script>
+        var x = document.getElementById("left-grid-para");
+        x.addEventListener("mouseover", myfun1);
+        x.addEventListener("click", myfun);
+        x.addEventListener("mouseout", myfun2);
+        function myfun(){
+            alert("can't be submitted now");
+            document.getElementById("form-heading").style.color='red';
+        }
+        function myfun1(){
+            document.getElementById("left-grid-para").style.color='black';
+        }
+        function myfun2(){
+            document.getElementById("left-grid-para").style.color='white';
+        }
+    </script>
+</body>
+</html>
