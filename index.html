@@ -46,10 +46,23 @@
             background-color: aqua;
             box-shadow: 0 2px 5px black;
         }
-        @media screen and (max-width:960px) {
-            .profile-img{
-            width: 80%;
-            height: 100%;
+        @media screen and (max-width:500px) {
+            .grid{
+            display: grid;
+            grid-template-columns: auto;
+        }
+        .profile-img{
+            margin-left: 18%;
+        }
+        .content-para h1{
+            text-align: center;
+        }
+        .content-para p{
+            margin-left: 4%;
+            text-align:justify;
+        }
+        .btn{
+            margin-left: 25%;
         }
     }
     </style>
@@ -94,7 +107,7 @@
         <div class="grid-container2">
             <div class="content-para">
                 <h1>Hi. I'm <i>Satyam</i></h1>
-                <p>I am a Computer Science Student <br>and I really enjoying working in the field of web development<br>
+                <p>I am a Computer Science Student <br>and I really enjoying working in the field of web development.<br>
                 This is my potfolio website, Do check it out <br>and if any suggestion please reach out to me.<br><i>Hit the button below</i> </p>
             </div>
             <div><button class="btn" type="button">Reach Out To Me</button></div>
